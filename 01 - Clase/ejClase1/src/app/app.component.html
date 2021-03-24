@@ -1,0 +1,28 @@
+
+<div>
+  <h1>Ejercicio Clase 1</h1>
+
+  <hr>
+  
+  <h3>Edad Uno:</h3>
+  <input type="number" [(ngModel)]='edadUno'>
+  
+  <br>
+  
+  <h3>Edad Dos:</h3>
+  <input type="number" [(ngModel)]='edadDos'>
+  
+  <hr>
+  <button (click)=CalcularSuma() 
+          (click)=CalcularPromedio()> >>Calcular</button>
+  
+  <h3>Suma:</h3> {{suma}}
+  <h3>Edad Promedio:</h3> {{promedio}}
+  
+  <br><br>
+  
+  <button (click)=Limpiar()> >>Limpiar</button>
+
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,24 @@
+<!--aca va el desarrollo de la pagina-->
+<h1>Hola mundo!</h1>
+
+<!-- para mostrar algo de ts hay q usar {{ }} muestra titulo del proyecto 
+porque es un atributo del app.component.ts-->
+{{
+  title
+}}
+
+<br>
+
+<input type="text" [(ngModel)]='title'>
+<!--todo lo q modifique dentro del input se va a modificar en el 
+title arriba del input-->
+
+<br><br>
+
+<button (click)=HacerCambios()>Cambiar Algo</button>
+
+<router-outlet>
+  
+</router-outlet>
+
+
